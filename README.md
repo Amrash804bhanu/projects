@@ -1,2 +1,2 @@
 # projects
-this project conatins static and dynamic website design 
+This projects contain the static website with all HTML and css elements and some event listeners in javascript.

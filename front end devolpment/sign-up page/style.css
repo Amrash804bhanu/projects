@@ -1,0 +1,105 @@
+body{
+    background-color:#0A4D68;
+    background-repeat:no repeat;
+}
+
+.container{
+    background-color:#64CCC5;
+    justify-content:center;
+    width:400px;
+    margin:70px 50px 20px 400px;
+    height:460px;
+    border-radius:5px;
+    text-align:center;
+
+
+}
+
+.container> h3{
+    font-size:26px;
+    justify-content:space-around;
+    padding:20px;
+
+    
+
+
+
+}
+
+input{
+    width:290px;
+    height:30px;
+}
+
+.flex >#ab,#ac,#ad,#af {
+    margin:20px 2px;
+    margin-top:3px;
+    text-align:left;
+
+
+}
+
+select{
+   width:89px;
+   height:30px;
+   border-radius:4px;
+   padding-top:30px;
+   };
+
+   select:hover {
+    cursor:pointer;
+    text-transform:capitalize;
+    background-color:#EF6262;
+    color:white;
+
+   }
+
+   #submit{
+    margin-bottom:40px;
+    margin-top:30px;
+    padding:1px 30px;
+    font-size:medium;
+    text-decoration: none;
+    
+
+
+   }
+
+  #submit:hover{
+    background-color:black;
+    color:white;
+  }
+
+  .link-logo >button {
+    align-items:center;
+    justify-content:center;
+    width:400px;
+    height:30px;
+    margin-top:10px;
+    padding-top:30px;
+    font-Size:"70px" ;
+    font-Weight:"500";
+  }
+
+  .link-logo >.google {
+    display:flex;
+    margin-left:400px;
+    margin-bottom:0px;
+    padding:20px;
+
+
+  }
+  .link-logo >.facebook{
+    display:flex;
+    margin-bottom:40px;
+    margin-left:400px;
+    padding:20px 20px;
+  } 
+
+a >img {
+    width:30px;
+    padding-left:100px;
+    padding-right:30px;
+}
+
+

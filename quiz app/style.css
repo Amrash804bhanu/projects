@@ -1,0 +1,74 @@
+
+    *{
+        align-items:center;
+        text-align:center;
+        
+       
+
+    }
+    .user-detail-section h1 {
+        color:aqua;
+        text-align:center;
+
+       
+    }
+
+    .user-detail-section img{
+        height:100px;
+        width:100px;
+        border-radius:100%;
+
+
+
+ }
+ input{
+    padding:3px;
+ }
+
+
+    .user-detail-section input {
+
+    width:40%;
+    height:20px;
+    border:1px solid ;
+    border-radius:2px;
+
+}
+    .user-detail-section .button{
+      background:#0096FF ;
+      width:100px;
+     color:white;
+      padding:3px;
+      text-transform:capitalize;
+    }
+
+    .catergory-section{
+        text-align:center;
+        align-items:center;
+        block-size:30%;
+        
+    }
+    .catergory-section h1{
+        width:3px;
+        height:2px;
+        color:grey;
+    }
+#category .btn{
+     background:#F0FFFF;
+     align-items:center;
+    color:grey;
+    font-weight:bold;
+     width: 1000px;
+     height:500px;
+     border:1.5px solid #00C0F0;
+     border-radius :5px;
+     padding:10px 50px 10px 50px ;
+    text-decoration:solid;
+    align-content: center;
+}
+
+
+    
+
+
+    

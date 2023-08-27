@@ -6,4 +6,4 @@ PREVIEW CARD
 
 
  Quiz app 
-   It is an dnamic website that works with the tools like html,CSS and Javascript 
+   It is an dynamic website that works with the tools like html,CSS and Javascript 

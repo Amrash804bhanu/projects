@@ -1,0 +1,127 @@
+/* this is a question popup window  */
+*{
+    box-sizing:borer-box;
+
+}
+
+#question-popup{
+    z-index:99999;
+   background-color:white;
+   border-radius:20px;
+   position:relative;
+   width:60%;
+   height:450px;
+   margin-left:260px;
+   margin-top:40px;
+   backdrop-filter:blur(20px);
+   display:none;
+   
+   
+ 
+
+
+
+}
+
+#question-popup>.header{
+    border-bottom:1px solid ;
+    padding-bottom:13px;
+   
+ 
+}
+
+#question-popup>.header>button{
+    padding:5px 9px ;
+    margin-top:10px;
+    margin-left:7px;
+    width:45%;
+    border:none;
+    height:30px;
+    background-color:white;
+
+    
+
+}
+
+/* hover functions of question-popup */
+
+#question-popup>.header>.Ques:hover{
+    background-color:whitesmoke;
+}
+
+#question-popup>.header>.posts:hover{
+    background-color:whitesmoke;
+}
+
+
+
+#question-popup>.header>.close-button{
+   width:30px;
+   border-radius:50%;
+   padding:2px;
+   
+
+    
+}#question-popup>.header>.close-button:hover{
+    background-color:whitesmoke;
+}
+
+/* hover function of the buttons  */
+
+
+
+
+input[type=text]{
+    padding:2px;
+    box-sizing: border-box;
+    height: 284px;
+  
+    width:690px;
+
+}
+
+
+
+#question-popup>.content-ques>button{
+     border-radius:20px;
+     padding:7px;
+     margin-top:10px;
+     width:26%px;
+     background-color:hwb(240 43% 4%);
+     color:white;
+     font-weight:bold;
+
+}
+
+.content-ques>#button-cancel{
+
+    margin-left:500px;
+    margin-right:10px;
+
+
+}
+.content-ques>#button-posting{
+    display:none;
+}
+
+body>.question-popup{
+    filter:blur(5px);
+    background:rgba(108, 103, 103, 0.08);
+    transition:filter 0ms  ease-in-out 0ms;
+}
+
+
+
+/* responsive one  */
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main-1{
+      width: 80%;
+      padding: 0;
+    }
+    .main-3{
+      width: 100%;
+    }
+  }

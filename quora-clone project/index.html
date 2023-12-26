@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>quora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index1.css">
+   
+    <script src="https://kit.fontawesome.com/2a53c31d1b.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    
+</head>
+<style>
+    .navbar>ul>li>a>img{
+        height:50px;
+        width:50px;
+
+    }
+
+  
+</style>
+<body>
+   <!-- this is th navbar sections -->
+    <div class="navbar">
+        <ul style="list-style-type:none;">
+          
+            <li><a href="https://www.quora.com/"> <i class="fa-brands fa-quora fa-xl"></i></a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i></a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-list fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/"><i class="fa-regular fa-pen-to-square fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/"> <i class="fa-solid fa-users fa-xl"></i></a></li>
+            <li><a href="./notification.html"><i class="fa-regular fa-bell fa-xl"></i></a></li>
+            <li><input type="search" id="search" placeholder="search"></li>
+            <li><button type="button" id="TryQuora" >TryQuora+</button></li>
+            <li><a href="login.html" class="users" ><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/" class="users"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+            <!-- dynamic act when clicking the add question button -->
+            <li> <div class="dropdown">
+                <button class="Question" onclick="myFunction();">Add question  <img src="./images/angile.png" id="arrow"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#question-popup" id="open-key" onclick="opening();">create post</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </li>
+            </ul>
+
+</div>
+
+<div id="question-popup">
+  <div class="header">
+    <button class="close-button" id="close-key" onclick="closing();">&times;</button><br>
+    <button class="Ques">Question</button>
+    <button class="posts">posts</button>
+   
+  </div>
+  <div class="content-ques" style="margin-top:20px; margin-left:20px;">
+    
+    <input type="text"   id="input-section" class="input"placeholder="write your question here ..." >
+
+    
+   <button type="button" id="button-cancel" onclick="">cancel</button>  
+   <button type="button" id="button-ques" onclick="questionadding();">Add question</button>
+
+   <!-- if posts was clicked then -->
+
+       <button type="button" id="button-posting" onclick="postsec();">post</button>
+  </div>
+</div>
+
+
+<!-- main-content section  -->
+<div class="main-content">
+  <div class="main-flex-container">
+      <div class="main-1" style="height:700px;">
+         <ul>
+         <li><button class="side-bars"> + Create space</button></li>
+         <li><button class="side-bars"> <img src="./images/writng.jpeg" class="same-size"> writing</button></li>
+         <li><button class="side-bars"> <img src="./images/hindi.jpeg" class="same-size">  Hindi language </button></li>
+         <li><button class="side-bars"> <img src="./images/tamil.jpeg" class="same-size">  Tamil language </button></li>
+         <li><button class="side-bars"> <img src="./images/maths.jpeg" class="same-size">  Mathematics </button></li>
+         <li><button class="side-bars"> <img src="./images/history.jpeg" class="same-size">  history</button></li>
+         <li><button class="side-bars"> <img src="./images/psycho.jpeg" class="same-size">  Psychology</button></li>
+         <li><button class="side-bars"> <img src="./images/health.jpeg" class="same-size">  Health</button></li>
+         <li><button class="side-bars"><img src="./images/movie.jpeg" class="same-size">   Movies</button></li></ul>
+               <br><br>
+
+              
+         <div class="copyright" style="color:grey;text-decoration:none;">
+          <a href="www.make.com">About.Careers.<br>
+              Terms.Privacy.<br>
+              Acceptable Use.Business.Press.<br>Your Ad choice.
+              <br>Grievance Officer.</a>
+         </div>
+      </div>
+     <div class="main-2" style="height:auto; width:550px ">
+      <!-- inside username box  -->
+          <div class="username-box" style="border:1px solid black; padding:10px; background-color:#ffff; border:none;border-radius:3px">
+              <div class="section-1">
+              <i class="fa-solid fa-circle-user fa-xl"></i>
+              <input type="search"  id="search-bar" placeholder="What do you want to ask or share ? "></div>
+              <div class="section-2"> <!-- buttons used for ask , post and answer -->
+                  <button type="button"><img src="./images/question-block.svg" class="img-resize" style="height:10px; width:10px;">Ask</button>
+                  <button type="button"><i class="fa-solid fa-pen-to-square"></i>Answer</button>
+                  <button type="button" id="last-button"><i class="fa-solid fa-pen"></i>Post</button>
+              </div>
+              
+          </div>
+           <!-- content or post visible with user  -->
+
+
+         
+          <div class="main-3-in" style="border:1px solid rgb(0, 0, 0); background-color:#ffff; border:none;border-radius:3px">
+              <div class="user-icon"> <i class="fa-solid fa-circle-user fa-xl"></i><span class="name"> <h4>walter</h4><br><h6 id="follow" style="color:blue ;padding:5px;">Follow+</h6>
+                  <h19 style="color:grey; margin-left:-90px"><br>working at cognizant<br></h19>
+               </span>
+              </div>
+              <br><br><br>
+              <img src="https://th.bing.com/th/id/OIP.GpFHQ-znkwDV50-m45FyZwHaEo?w=235&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="margin-top:10px; margin-left:60px">
+              <div class="para" style="margin-top:40px">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente doloribus quisquam possimus, repudiandae totam veniam velit modi voluptates numquam impedit? Quos quisquam
+                reprehenderit maiores illum exercitationem esse tempora consequuntur eveniet.
+              </div>
+           </div>
+
+
+
+           <div class="main-3-in" style="border:1px solid rgb(0, 0, 0); background-color:#ffff; border:none;border-radius:3px">
+              <div class="user-icon"> <i class="fa-solid fa-circle-user fa-xl"></i><span class="name"> <h4>walter</h4><br><h6 id="follow" style="color:blue ;padding:5px;">Follow+</h6>
+                  <h19 style="color:grey; margin-left:-90px"><br>working at cognizant<br></h19>
+               </span>
+              </div>
+              <br>
+              <h3>How do I divert my negative thoughts ?</h3>
+              <p>there are 10 incredible ways to change the thoughts:</p>
+              <img src="https://th.bing.com/th/id/OIP.7z6d7G7E-cbF9P_lTQjhwwHaEK?rs=1&pid=ImgDetMain" style="margin-top:34px; margin-left:-10px; height:299px; width:549px">
+                <div class="post" style="background-color:white;">
+                  <div class="arrow-show">
+                      <button type="button"  id="array-1"><i class="fa-solid fa-arrow-up fa-xl"></i>&nbsp;Upvote <h8>30k</h8></button>
+                      <button type="button"  id="arr-2"><i class="fa-solid fa-arrow-down fa-xl"></i></button>
+                  </div>
+                   
+                  <div class="comments">
+                      <i class="fa-solid fa-arrows-rotate fa-xl"></i> 278 &nbsp; &nbsp;
+                      <i class="fa-regular fa-comment fa-xl"></i> 40 </div>
+                      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+
+                      <button type="button" style="height:40px ;width:20px; margin-top:-5px; border:none;background-color:whitesmoke;"> <i class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i></button>
+
+
+
+              </div>
+           </div>
+
+
+           <div class="main-3-in" style="border:1px solid rgb(0, 0, 0); background-color:#ffff; border:none;border-radius:3px">
+              <div class="user-icon"> <i class="fa-solid fa-circle-user fa-xl"></i><span class="name"> <h4>walter</h4><br><h6 id="follow" style="color:blue ;padding:5px;">Follow+</h6>
+                  <h19 style="color:grey; margin-left:-90px"><br>working at cognizant<br></h19>
+               </span>
+              </div>
+              <br>
+              <h3>How do be an developer ?</h3>
+              <p> 8 important steps to explore the new skills in the technology:</p>
+              <img src="https://th.bing.com/th/id/OIP.dl65d1uOap3CWG5J7ldMDwHaE8?w=281&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="margin-top:34px; margin-left:-10px; height:299px; width:549px">
+                <div class="post" style="background-color:white;">
+                  <div class="arrow-show">
+                      <button type="button"  id="array-1"><i class="fa-solid fa-arrow-up fa-xl"></i>&nbsp;Upvote <h8>30k</h8></button>
+                      <button type="button"  id="arr-2"><i class="fa-solid fa-arrow-down fa-xl"></i></button>
+                  </div>
+                   
+                  <div class="comments">
+                      <i class="fa-solid fa-arrows-rotate fa-xl"></i> 278 &nbsp; &nbsp;
+                      <i class="fa-regular fa-comment fa-xl"></i> 40 </div>
+                      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+
+                      <button type="button" style="height:40px ;width:20px; margin-top:-5px; border:none;background-color:whitesmoke;"> <i class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i></button>
+
+
+
+              </div>
+           </div>
+          
+        
+      </div>
+
+
+
+
+
+
+
+      <!-- thi is ads section  -->
+      <div class="ads" style="float:initial;">
+         <img src="https://i.pinimg.com/originals/1c/aa/59/1caa5900ef5eff953773fc29b1d23878.jpg" class="imag-resixe">
+         <img src="https://th.bing.com/th/id/OIP.mIdH-ksoE6kSfTnDgLLUGwHaJi?w=195&h=251&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="imag-resixe">
+         <img src="https://i.pinimg.com/originals/1c/aa/59/1caa5900ef5eff953773fc29b1d23878.jpg" class="imag-resixe">
+         <img src="https://th.bing.com/th/id/OIP.mIdH-ksoE6kSfTnDgLLUGwHaJi?w=195&h=251&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="imag-resixe">
+        
+      </div>
+  </div>
+  <!-- this is the question block pop up window  -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+// this is the active buttons of close and add question
+
+// add question
+
+function questionadding()
+{
+  var question=document.getElementById('button-ques');
+  var input=document.getElementById('input-section').value=" ";
+  
+  question.onclick = function(event) {
+   
+    if (!event.target.matches('#input')){
+           alert("input shown");
+          
+        }
+    }
+    // cancel button function 
+    var cancel = document.getElementById('button-cancel');
+    cancel.addEventListener("click",() =>{
+
+      alert("the cancel button was clicked ");
+    });
+    
+}
+
+//  this is an posts button function
+function postsec(){
+   let button1 = document.getElementsByClassName('posts');
+   let button2 =document.getElementById('button-posting');
+
+   let button1Clicked = false;
+    if (!button1Clicked) {
+        document.getElementById('button-posting').style.display = 'block';
+        button1Clicked = true;
+    } else {
+        document.getElementById('button-posting').style.display = 'none';
+        button1Clicked = false;
+    }
+
+
+  };
+
+
+
+
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.Question')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+// active function of cancel and add question
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login-form.css">
+    <script src="https://kit.fontawesome.com/2a53c31d1b.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image:url('./images/automobile-3394015_1280.jpg');">
+<!-- container was made with img and p tags -->
+
+  <div class="container" style="background-color:rgb(251, 251, 252)">
+
+      <img src="./images/quora.jpeg" alt="image not found" ><br><br>
+      <p style="margin-left:120px;"> the place to share knowledge and better understand the world </p>
+      <!-- the flex-material  starts  -->
+    <div class="flex-material">
+     <div class="links">
+      <!-- add the links  -->
+      <button type="button" class="social-media"><img src="./images/1220388_google_buzz_communication_social_icon.png"><a href="https://www.google.com/">Continue with Google</a></button><br>
+      <button type="button" class="social-media" id="fb-link"><img src="./images/1233013_facebook_icon.png"><a href="https://www.facebook.com/">Continue with Facebook</a></button>
+      
+     </div>
+     <!-- vertical line  -->
+     <div class="vl"></div>
+    
+     <form class="login-form">
+      <h3>Login</h3>
+      <hr>
+      <h5>Email</h5>
+      <input type="email" id="mail" placeholder="your email"> <br>
+      <h5>password</h5><input id="pass"type="password" placeholder="your password"> <br><br>
+      <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&approval_prompt=auto&client_id=917071888555.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.quora.com%2Fgoogle_%2Fcallback&response_type=code&scope=email%20profile&state=eyJwZXJtcyI6ICJub19jb250YWN0cyIsICJjc3JmIjogImJlYmNjNGM0ODRlNjhlNjI3NTcyMGQ4MzgwZTUxYWQ5IiwgInBsYXRmb3JtIjogImRlc2t0b3AiLCAidGFyZ2V0IjogInNpZ251cCJ9&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" id="log-password">forgot password?</a>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      <button type="submit" id="login-button" onclick="myfunc()" style="margin-top:20px;">Login</button>
+     </form>
+    </div>
+
+    <div class="copyright" style="margin-top:10px;background-color:#f1f2f2;font-size:small;color:gray">About .Careers .Privacy . Terms .Contact .Languages.Your Ad Choices.Press© Quora, Inc. 2023</div>
+
+  </div>
+  
+    
+</body>
+<script>
+  function myfunc(){
+    var email = document.getElementById("mail").value;
+    var password = document.getElementById("pass").value;
+
+    if(email == 'amrashbhanu@gmail.com' && password == 'admin@2003'){
+      window.location.assign="index.html";
+      alert("sucess");
+    }
+  
+
+  }
+</script>
+</html>

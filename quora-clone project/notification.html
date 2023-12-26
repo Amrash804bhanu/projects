@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification </title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index1.css">
+    <link rel="stylesheet" href="./notification.css">
+    <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/2a53c31d1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- this is th navbar sections -->
+     <div class="navbar">
+        <ul style="list-style-type:none;">
+          
+            <li><a href="https://www.quora.com/"> <i class="fa-brands fa-quora fa-xl"></i></a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i></a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-list fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/"><i class="fa-regular fa-pen-to-square fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/"> <i class="fa-solid fa-users fa-xl"></i></a></li>
+            <li><a href="./notification.html"><i class="fa-regular fa-bell fa-xl"></i></a></li>
+            <li><input type="search" id="search" placeholder="search"></li>
+            <li><button type="button" id="TryQuora" >TryQuora+</button></li>
+            <li><a href="login.html" class="users" ><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+            <li><a href="https://www.quora.com/" class="users"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+            <!-- dynamic act when clicking the add question button -->
+            <li> <div class="dropdown">
+                <button class="Question" onclick="myFunction();">Add question  <img src="./images/angile.png" id="arrow"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#question-popup" id="open-key" onclick="opening();">create post</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </li>
+            </ul>
+
+</div>
+
+
+
+<div id="question-popup">
+<div class="header">
+<button class="close-button" id="close-key" onclick="closing();">&times;</button><br>
+<button class="Ques">Question</button>
+<button class="posts">posts</button>
+
+</div>
+<div class="content-ques" style="margin-top:20px; margin-left:20px;">
+
+<input type="text"   id="input-section" class="input"placeholder="write your question here ..." >
+
+
+<button type="button" id="button-cancel" onclick="">cancel</button>  
+<button type="button" id="button-ques" onclick="questionadding();">Add question</button>
+
+<!-- if posts was clicked then -->
+
+   <button type="button" id="button-posting" onclick="postsec();">post</button>
+</div>
+</div>
+
+<div class="main-content">
+    <div class="main-flex-container">
+        <div class="filter">
+          <p style="text-align:left;font-weight:bold;">Filter section </p>
+          <hr style="width:170px;margin-left:0px;">
+        <ul style="list-style-type: none;">
+          
+           <button class="lists">All Notification</button><br>
+           <button class="lists">Stories</button><br>
+           <button class="lists">Questions</button><br>
+           <button class="lists">Spaces</button><br>
+           <button class="lists">People Updates</button><br>
+           <button class="lists">Comments and mentions</button><br>
+           <button class="lists">Upvotes</button><br>
+           <button class="lists">Your content</button><br>
+           <button class="lists">Your profile</button><br>
+           <button class="lists">Announcements</button><br>
+           <button class="lists">Earnings</button><br>
+           <button class="lists">Subscriptions</button>
+         </div>
+        
+    <div class="notification" style="margin-top:40px;font-weight:medium;">
+          <h3 style="text-transform:capitalize;">notification</h3>
+          <hr>
+          <br>
+          <div class="material" style="border:1px solid black;">
+            <i  id="image"  class="fa-solid fa-circle-user fa-xl"></i>
+            <div class="head">
+            <h5 style="font-weight:lighter;
+             text-decoration: none; color:black;text-transform:capitalize;">psychology of life . posted in a space you might like.Wed</h5>
+            <button><a href="#"><h3>Are Nazi ideology and marxism related ?</h3></a></button>
+            
+            </div>
+          </div>
+          
+          <div class="material" style="border:1px solid black;">
+            <i  id="image"  class="fa-solid fa-circle-user fa-xl"></i>
+            <div class="head">
+            <h5 style="font-weight:lighter;
+             text-decoration: none; color:black;text-transform:capitalize;">psychology of life . posted in a space you might like.Wed</h5>
+            <button><a href="#"><h3>Are Nazi ideology and marxism related ?</h3></a></button>
+            
+            </div>
+            
+          </div>
+          <div class="material" style="border:1px solid black;">
+            <i  id="image"  class="fa-solid fa-circle-user fa-xl"></i>
+            <div class="head">
+            <h5 style="font-weight:lighter;
+             text-decoration: none; color:black;text-transform:capitalize;">psychology of life . posted in a space you might like.Wed</h5>
+            <button><a href="#"><h3>Are Nazi ideology and marxism related ?</h3></a></button>
+            
+            </div>
+            
+          </div>
+          <div class="material" style="border:1px solid black;">
+            <i  id="image"  class="fa-solid fa-circle-user fa-xl"></i>
+            <div class="head">
+            <h5 style="font-weight:lighter;
+             text-decoration: none; color:black;text-transform:capitalize;">psychology of life . posted in a space you might like.Wed</h5>
+            <button><a href="#"><h3>Are Nazi ideology and marxism related ?</h3></a></button>
+            
+            </div>
+            
+          </div>
+      </div>
+            
+</div>
+
+</body>
+</html>
